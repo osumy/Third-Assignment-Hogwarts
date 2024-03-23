@@ -8,7 +8,7 @@ This program is a Hogwarts school management system where students, teachers and
 
 ### Main Class
 The main menu of the program, which includes the login and registration menus for students and teachers
-![main](src/images/main.png)
+![main](src/images/Main.png)
 
 ### Hogwarts Class
 This class includes the list of all students, teachers and assistants, as well as all courses and the list of requests for courses and users. It also includes all the necessary methods for grading students, leaving comments to teachers, etc.
