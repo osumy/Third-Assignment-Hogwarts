@@ -38,7 +38,7 @@ public class Account implements AccountManagement {
         System.out.println("Gender: " + gender);
         System.out.println("Age: " + age);
         System.out.println("Birthday: " + birthday);
-        System.out.print("\n( enter anything to continue )\n>> ");
+        System.out.print("\n( enter something to continue )\n>> ");
         Scanner sc = new Scanner(System.in);
         sc.next();
     }

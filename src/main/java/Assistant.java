@@ -151,15 +151,21 @@ public class Assistant {
         switch (choice){
             case 1:
                 Hogwarts.viewAllTeacherSignupRequests();
+                System.out.println("(-1 to back)");
                 System.out.print(">> Enter your choice: ");
                 choice = sc.nextInt();
+                if (choice == -1)
+                    return;
                 Hogwarts.addAccount(Hogwarts.teacherSignupRequests.get(choice));
                 Hogwarts.teacherSignupRequests.remove(choice);
                 break;
             case 2:
                 Hogwarts.viewAllStudentSignupRequests();
+                System.out.println("(-1 to back)");
                 System.out.print(">> Enter your choice: ");
                 choice = sc.nextInt();
+                if (choice == -1)
+                    return;
                 Hogwarts.addAccount(Hogwarts.studentSignupRequests.get(choice));
                 Hogwarts.studentSignupRequests.remove(choice);
                 break;

@@ -62,7 +62,7 @@ public class Hogwarts {
     public static void logout0(){
         for (int i = 0; i < admins.size(); i++) {
             if (admins.get(i).getUsername().equals(adminAccount.getUsername())) {
-                admins.add(i, adminAccount);
+                admins.set(i, adminAccount);
                 return;
             }
         }
@@ -70,7 +70,7 @@ public class Hogwarts {
     public static void logout1() {
         for (int i = 0; i < teachers.size(); i++) {
             if (teachers.get(i).getUsername().equals(teacherAccount.getUsername())) {
-                teachers.add(i, teacherAccount);
+                teachers.set(i, teacherAccount);
                 return;
             }
         }
@@ -78,7 +78,7 @@ public class Hogwarts {
     public static void logout2() {
         for (int i = 0; i < students.size(); i++) {
             if (students.get(i).getUsername().equals(studentAccount.getUsername())) {
-                students.add(i, studentAccount);
+                students.set(i, studentAccount);
                 return;
             }
         }
